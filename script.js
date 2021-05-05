@@ -1,9 +1,14 @@
 //  Adiciona cada cor na paleta de cores
 function paletaCores() {
-    let color = document.querySelectorAll(".color");
-    color[0].style.backgroundColor = 'rgb(0, 0, 0)';
-    for (let index = 1; index < color.length; index += 1) {
-        color[index].style.backgroundColor = geraRGB();
+    const color = document.querySelectorAll(".color");
+    for (let index = 0; index < color.length; index += 1) {
+        if (index === 0){
+            color[index].style.backgroundColor = 'rgb(0, 0, 0)';
+            color[index].addEventListener('click', addSelected);
+        } else {
+            color[index].style.backgroundColor = geraRGB();
+            color[index].addEventListener('click', addSelected);
+        }
     }
 }
 
@@ -40,3 +45,22 @@ function createPixelBoard(linhas){
 createPixelBoard(linhas);
 
 //  Define a cor preta como pré-selecionada 
+
+function startColor(){
+    let black = document.querySelector(".color");
+    black.classList.add("selected");
+}
+
+startColor();
+
+console.log(document.querySelector(".color"));
+
+// Reatribui a classe selected à cor selecionada na paleta
+
+function addSelected(event){
+    let selectedElement = document.querySelector(".selected");
+    selectedElement.classList.remove('selected');
+    event.target.classList.add("selected");
+}
+
+// 
