@@ -29,7 +29,7 @@ function geraRGB() {
 //  Adiciona o quadro de pixels
 let linhas = document.querySelectorAll('.linha');
 
-function createPixelBoard(linhas){
+function createPixelBoard(lines){
     //let pixel = document.createElement('div');
     for (let i = 0; i < linhas.length; i += 1){
         console.log(linhas[i]);
@@ -63,4 +63,16 @@ function addSelected(event){
     event.target.classList.add("selected");
 }
 
-// 
+// Clicar em um pixel no quadro de Pixels transforma a sua cor para a cor selecionada na paleta
+
+function setColor(){
+    const boxes = document.querySelectorAll(".pixel");
+
+    for (let index = 0; index < boxes.length; index += 1){
+        boxes[index].addEventListener('click', (event) => {
+            event.target.style.backgroundColor = document.querySelector(".selected").style.backgroundColor;
+        })
+    }
+}
+
+setColor();
