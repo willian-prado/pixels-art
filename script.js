@@ -26,22 +26,63 @@ function geraRGB() {
     }
 }
 
-//  Adiciona o quadro de pixels
-let linhas = document.querySelectorAll('.linha');
+/*
+input = document.querySelector("#board-size");
+function checkValue(event) {
+    let size = event.target.value;
 
-function createPixelBoard(lines) {
-    for (let i = 0; i < linhas.length; i += 1) {
-        console.log(linhas[i]);
+    if (size < 5){
+        event.target.value = 5;
+    } else if (size > 50){
+        event.target.value = 50;
+    }
+}
+input.addEventListener('input', checkValue);
+*/
 
-        for (let j = 0; j < 5; j += 1) {
+//  Faça o quadro de pixels ser definido pela pessoa usuaria 
+//  Cria o quadro de pixels de acordo com o input
+
+function createPixelBoard(n) {
+    const board = document.querySelector("#pixel-board");
+    board.innerHTML = '';
+
+    for (let i = 0; i < n; i += 1) {
+        const linhas = document.createElement('div');
+        linhas.className = "linha";
+        board.appendChild(linhas);
+
+        for (let j = 0; j < n; j += 1) {
+            let linha = document.querySelectorAll(".linha");
             const pixel = document.createElement('div');
             pixel.className = 'pixel';
-            linhas[i].appendChild(pixel);
+            linha[i].appendChild(pixel);
         }
     }
 }
 
-createPixelBoard(linhas);
+function geraBoard() {
+    n = document.querySelector("#board-size").value;
+    
+    if (n === '') {
+        alert("Board inválido!")
+    } else if (n < 5) {
+        n = 5;
+        createPixelBoard(n);
+        setColor();
+    } else if (n > 50) {
+        n = 50;
+        createPixelBoard(n);
+        setColor();
+    } else {
+        createPixelBoard(n);
+        setColor();
+    }
+}
+
+const btnVQV = document.querySelector("#generate-board");
+btnVQV.addEventListener('click', geraBoard);
+
 
 //  Define a cor preta como pré-selecionada 
 function startColor() {
@@ -71,14 +112,13 @@ function setColor() {
     }
 }
 
-setColor();
-
 // Cria um botão que remove a cor de todos os pixels
 function createButton() {
     const btnContainer = document.getElementById('button-container');
     const btnClear = document.createElement('button');
     btnClear.innerText = 'Limpar';
     btnClear.id = 'clear-board';
+    btnClear.className = 'button-config';
     btnContainer.appendChild(btnClear);
 }
 
@@ -95,6 +135,5 @@ function clearBoard() {
 const buttonClear = document.getElementById('clear-board');
 buttonClear.addEventListener('click', clearBoard);
 
-//  Faça o quadro de pixels ser definido pela pessoa usuaria 
-
-
+createPixelBoard(5);
+setColor();

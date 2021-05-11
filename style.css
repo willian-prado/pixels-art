@@ -2,27 +2,41 @@
   margin: 0;
 }
 
-#title {
-  text-align: center;
+.header-container {
+  background-color: lightgrey;
+  height: 150px;
+  width: 50%;
+  margin: 0 auto;
 }
 
-#clear-board:active {
-  background-color: red;
+#title {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  font-size: 35px;
 }
 
 #button-container {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin: 25px auto;
 }
 
-#clear-board {
-  margin: 0 auto;
-  width: 100px;
+.button-config {
+  width: 60px;
   height: 30px;
   background-color: lightgray;
   text-align: center;
   vertical-align: middle;
+  margin-right: 15px;
+}
+
+#board-size {
+  margin-right: 15px;
+}
+
+.button-config:active {
+  background-color: red;
 }
 
 #color-palette {
@@ -41,6 +55,9 @@
 
 #pixel-board {
   margin-top: 30px;
+  background-color: lightgrey;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .linha {
