@@ -7,7 +7,7 @@ Este é o primeiro a utilizar HTML, CSS e JavaScript, que em conjunto, permitem 
 
 Implementar uma página web que contém uma paleta de cores funcional que pode ser utilizada para criar desenhos em pixels.
 
-Principais habilidades trabalhadas:
+**Principais habilidades desenvolvidas nesse trabalho:**
 
 - Manipulação do DOM, usando seletores como `getElementById`, `getElementsByTagName`, `querySelector` e `querySelectorAll`;
 - Criação de `event listeners` que permitem a interação com elementos da página;
