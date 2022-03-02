@@ -1,12 +1,16 @@
 ## Projeto Pixels Art
 
-Terceiro projeto do curso de desenvolvimento web da Trybe e o primeiro a utilizar HTML, CSS e JavaScript, permitindo criar páginas web dinâmicas e interativas.
-Nesse projeto implementamos uma página web que contém uma paleta de cores funcional que pode ser utilizada para criar desenhos em pixels.
+Terceiro projeto do módulo de Fundamentos do curso de desenvolvimento web da Trybe. \
+Este é o primeiro a utilizar HTML, CSS e JavaScript, que em conjunto, permitem a criação de páginas web dinâmicas e interativas.
 
-As principais habilidades trabalhadas são:
+**Objetivo do projeto**
+
+Implementar uma página web que contém uma paleta de cores funcional que pode ser utilizada para criar desenhos em pixels.
+
+Principais habilidades trabalhadas:
 
 - Manipulação do DOM, usando seletores como `getElementById`, `getElementsByTagName`, `querySelector` e `querySelectorAll`;
-- Criação de `event listeners` que permitem a interação da pessoa usuária com elementos da página;
+- Criação de `event listeners` que permitem a interação com elementos da página;
 - Utilizar funções e métodos da linguagem JavaScript;
 
 ---
