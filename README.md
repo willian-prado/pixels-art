@@ -6,7 +6,7 @@ Nesse projeto implementamos uma página web que contém uma paleta de cores func
 As principais habilidades trabalhadas são:
 
 - Manipulação do DOM, usando seletores como `getElementById`, `getElementsByTagName`, `querySelector` e `querySelectorAll`;
-- Criação de eventos (ou `eventListeners`) que permitem a interação do usuários com elementos da página;
+- Criação de `event listeners` que permitem a interação da pessoa usuária com elementos da página;
 - Utilizar funções e métodos da linguagem JavaScript;
 
 ---
