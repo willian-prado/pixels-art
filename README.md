@@ -1,6 +1,9 @@
 ## Projeto Pixels Art
 
-Terceiro projeto do módulo de Fundamentos do curso de desenvolvimento web da Trybe. \
+> Terceiro projeto do módulo de Fundamentos do curso de desenvolvimento web da Trybe.
+
+**Contexto**
+
 Este é o primeiro a utilizar HTML, CSS e JavaScript, que em conjunto, permitem a criação de páginas web dinâmicas e interativas.
 
 **Objetivo do projeto**
@@ -13,9 +16,14 @@ Implementar uma página web que contém uma paleta de cores funcional que pode s
 - Criação de `event listeners` que permitem a interação com elementos da página;
 - Utilizar funções e métodos da linguagem JavaScript;
 
+**Tecnologias utilizadas**
+- <a href="https://www.w3.org/html/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" title="HTML5" title="HTML" align="center" height="35" /> - HTML </a>
+- <a href="https://www.w3schools.com/css/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" title="CCS3" title="CSS" align="center" height="35"/> - CSS </a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" align="center" height="30"/>  - JavaScript</a>
+
 ---
 
-### Lista de requisitos propostos:
+### Lista de requisitos propostos pela Trybe:
 
 #### Obrigatórios
 
@@ -109,17 +117,3 @@ Implementar uma página web que contém uma paleta de cores funcional que pode s
 
 - A cor preta ainda precisa estar presente e deve ser a primeira na sua paleta de cores.
 
----
-
-
-### Dicas
-
-- Você pode pesquisar sobre a propriedade `display` do CSS, [especificamente sobre as opções `table`, `table-row` e `table-cell`](https://stackoverflow.com/questions/29229523/how-and-why-to-use-display-table-cell-css) para te ajudar a posicionar os elementos;
-
-- [Que tal](https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/) usar um _loop_ para adicionar o mesmo evento em vários elementos? [Ou então](https://gomakethings.com/attaching-multiple-elements-to-a-single-event-listener-in-vanilla-js/) a técnica de _event bubbling_ combinada com `classList`?
-
-- Se precisar consultar os valores do _CSS_ de um elemento a partir do _JavaScript_, [dê uma olhada aqui](https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp).
-
-- Para alterar alguma propriedade do _CSS_ de um elemento através do _JavaScript_, dê uma olhada no [atributo `style`](https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp) do elemento.
-
-- Para colocar sua página no [GitHub Pages](https://pages.github.com/), não é necessário remover o conteúdo que já está lá, você pode apenas adicionar essa nova página. Para isso, todo o conteúdo desse projeto deve ser colocado em uma pasta `/projetos/pixels-art`.
