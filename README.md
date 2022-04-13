@@ -4,7 +4,7 @@
 
 **Contexto**
 
-Este é o primeiro a utilizar HTML, CSS e JavaScript, que em conjunto, permitem a criação de páginas web dinâmicas e interativas.
+Este é o primeiro projeto a utilizar HTML, CSS e JavaScript, que em conjunto, permitem a criação de páginas web dinâmicas e interativas.
 
 **Objetivo do projeto**
 
