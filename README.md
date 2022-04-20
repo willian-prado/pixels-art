@@ -1,10 +1,10 @@
 ## Projeto Pixels Art
 
-> Terceiro projeto do módulo de Fundamentos do curso de desenvolvimento web da Trybe.
+> Terceiro projeto do módulo de Fundamentos do curso de desenvolvimento web da [Trybe](https://www.betrybe.com/)
 
 **Contexto**
 
-Este é o primeiro projeto a utilizar HTML, CSS e JavaScript, que em conjunto, permitem a criação de páginas web dinâmicas e interativas.
+Este é o primeiro projeto a utilizar HTML, CSS e JavaScript, que juntos, permitem a criação de páginas web dinâmicas e interativas.
 
 **Objetivo do projeto**
 
@@ -116,4 +116,8 @@ Implementar uma página web que contém uma paleta de cores funcional que pode s
 **12 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página.**
 
 - A cor preta ainda precisa estar presente e deve ser a primeira na sua paleta de cores.
+
+---
+
+[Ir para a lista de projetos](https://github.com/willian-prado/trybe-records)
 
